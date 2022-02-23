@@ -1,0 +1,10 @@
+include:
+  - project: 'org/dev/ox-gitlab-pipeline-templates'
+    ref: main
+    file: '/templates/.gitlab-ci-app-container.yml'
+
+variables:
+  CONTAINER_NAME: test
+  AWS_US_SERVICE_NAME_DEV: dev_test_service_fargate
+  MR_JQ_PATH: .test_image_tag
+  TEST_OX_APP: ENABLED
